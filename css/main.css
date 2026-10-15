@@ -1,0 +1,82 @@
+/* css/main.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Ajuste da escala base para proporção visual compacta (~80% de densidade) */
+html {
+  font-size: 85%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Customização da Barra de Rolagem Lateral (Scrollbar) */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Variáveis do Tema Claro */
+:root[data-theme="light"] {
+  --bg-primary: #F8F8F6;
+  --bg-secondary: #FFFFFF;
+  --text-primary: #121212;
+  --text-secondary: #666666;
+  --border-color: #E2E2DF;
+  --accent-color: #121212;
+}
+
+/* Variáveis do Tema Escuro */
+:root[data-theme="dark"] {
+  --bg-primary: #0D0D0E;
+  --bg-secondary: #161618;
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --border-color: #27272A;
+  --accent-color: #FFFFFF;
+}
+
+/* Reset Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base da Página */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}

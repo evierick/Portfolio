@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src 'self'; frame-src 'self' https://codepen.io; script-src 'self';">
+  <title data-i18n="page_title">Erick Andre | Fashion & Tech</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">EV I ERICK</a>
+    
+    <nav class="nav">
+      <a href="index.html" class="nav-link active" data-i18n="nav_vision">Visão</a>
+      <a href="projetos.html" class="nav-link" data-i18n="nav_projects">Projetos</a>
+      <a href="#contato" class="nav-link" data-i18n="nav_contact">Contato</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-selector">
+        <button id="lang-pt-btn" class="lang-btn active">PT</button>
+        <span class="divider">/</span>
+        <button id="lang-en-btn" class="lang-btn">EN</button>
+      </div>
+
+      <button id="theme-toggle-btn" class="theme-btn" aria-label="Alternar Tema">
+        <span class="light-icon">☀️</span>
+        <span class="dark-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tagline" data-i18n="hero_tag">TECNOLOGIA, DESIGN & MODA</span>
+        <h1 class="hero-title" data-i18n="hero_title">A intersecção entre a tecnologia, o design e a moda.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Desenvolvimento frontend, modelagem digital, engenharia de vestuário e experiências interativas no CodePen.
+        </p>
+        <a href="projetos.html" class="btn-primary" data-i18n="hero_cta">Explorar Projetos</a>
+      </div>
+    </section>
+
+    <!-- Trabalhos em Destaque -->
+    <section class="featured">
+      <h2 class="section-title" data-i18n="featured_title">Trabalhos em Destaque</h2>
+      
+      <div class="grid-featured">
+        <article class="card-featured">
+          <div class="media-container">
+            <video class="card-video" loop muted playsinline poster="assets/thumb1.jpg">
+              <source src="assets/video1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-info">
+            <span class="category">Frontend & UI</span>
+            <h3>Design System & Interatividade</h3>
+            <span class="link-arrow">→</span>
+          </div>
+        </article>
+
+        <article class="card-featured">
+          <div class="media-container">
+            <img src="assets/modelagem.jpg" alt="Modelagem Digital" class="card-img" loading="lazy">
+          </div>
+          <div class="card-info">
+            <span class="category">Apparel Design</span>
+            <h3>Modelagem & Encaixe Digital</h3>
+            <span class="link-arrow">→</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé & Seção de Contato -->
+  <footer id="contato" class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title" data-i18n="contact_title">CONTATO</h2>
+      <p class="footer-desc" data-i18n="contact_desc">
+        Aberto a projetos de desenvolvimento UX/UI Design, engenharia de vestuário e colaborações criativas.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:seuemail@exemplo.com" class="footer-link">Email ↗</a>
+        <a href="https://github.com/evierick" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+        <a href="https://codepen.io/evierick" target="_blank" rel="noopener noreferrer" class="footer-link">CodePen ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span data-i18n="footer_rights">E. Venegas. Todos os direitos reservados.</span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

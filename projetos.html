@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src 'self'; frame-src 'self' https://codepen.io; script-src 'self';">
+  <title data-i18n="projects_page_title">Projetos | Erick Andre</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/projetos.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">EV I ERICK</a>
+    
+    <nav class="nav">
+      <a href="index.html" class="nav-link" data-i18n="nav_vision">Visão</a>
+      <a href="projetos.html" class="nav-link active" data-i18n="nav_projects">Projetos</a>
+      <a href="#contato" class="nav-link" data-i18n="nav_contact">Contato</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-selector">
+        <button id="lang-pt-btn" class="lang-btn active">PT</button>
+        <span class="divider">/</span>
+        <button id="lang-en-btn" class="lang-btn">EN</button>
+      </div>
+
+      <button id="theme-toggle-btn" class="theme-btn" aria-label="Alternar Tema">
+        <span class="light-icon">☀️</span>
+        <span class="dark-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Galeria de Projetos -->
+  <main class="projects-page">
+    <div class="projects-header">
+      <h1 data-i18n="projects_title">Galeria de Projetos</h1>
+      <p data-i18n="projects_subtitle">
+        Exploração de interfaces web interativas no CodePen e desenvolvimentos na área da moda.
+      </p>
+    </div>
+
+    <div class="codepen-grid">
+      <!-- Projeto 1: Championship System - Chakals -->
+      <article class="pen-card">
+        <div class="pen-embed-wrapper">
+          <iframe 
+            src="https://codepen.io/evierick/embed/GgqVObG?default-tab=result&theme-id=dark" 
+            loading="lazy"
+            title="Championship System - Chakals">
+          </iframe>
+        </div>
+        <div class="pen-details">
+          <div>
+            <h2 data-i18n="pen1_title">Championship System - Chakals</h2>
+            <p data-i18n="pen1_desc">Sistema interativo desenvolvido para campeonato e-sports.</p>
+          </div>
+          <a href="https://codepen.io/evierick/full/GgqVObG" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="open_codepen">
+            Abrir no CodePen ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Projeto 2: Draw system - Chakals -->
+      <article class="pen-card">
+        <div class="pen-embed-wrapper">
+          <iframe 
+            src="https://codepen.io/evierick/embed/yyJaoZm?default-tab=result&theme-id=dark" 
+            loading="lazy"
+            title="Draw system - Chakals">
+          </iframe>
+        </div>
+        <div class="pen-details">
+          <div>
+            <h2 data-i18n="pen2_title">Draw system - Chakals</h2>
+            <p data-i18n="pen2_desc">Interface responsiva e algoritmo para sorteio de equipas.</p>
+          </div>
+          <a href="https://codepen.io/evierick/full/yyJaoZm" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="open_codepen">
+            Abrir no CodePen ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Projeto 3: My First Code -->
+      <article class="pen-card">
+        <div class="pen-embed-wrapper">
+          <iframe 
+            src="https://codepen.io/evierick/embed/PwPQpEp?default-tab=result&theme-id=dark" 
+            loading="lazy"
+            title="My First Code">
+          </iframe>
+        </div>
+        <div class="pen-details">
+          <div>
+            <h2 data-i18n="pen3_title">My First Code</h2>
+            <p data-i18n="pen3_desc">Primeiro experimento de código e estruturação web.</p>
+          </div>
+          <a href="https://codepen.io/evierick/pen/PwPQpEp" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-i18n="open_codepen">
+            Abrir no CodePen ↗
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Rodapé & Seção de Contato -->
+  <footer id="contato" class="footer">
+    <div class="footer-content">
+      <h2 class="footer-title" data-i18n="contact_title">CONTATO</h2>
+      <p class="footer-desc" data-i18n="contact_desc">
+        Aberto a projetos de desenvolvimento UX/UI Design, engenharia de vestuário e colaborações criativas.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:seuemail@exemplo.com" class="footer-link">Email ↗</a>
+        <a href="https://github.com/evierick" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+        <a href="https://codepen.io/evierick" target="_blank" rel="noopener noreferrer" class="footer-link">CodePen ↗</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span data-i18n="footer_rights">E. Venegas. Todos os direitos reservados.</span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
